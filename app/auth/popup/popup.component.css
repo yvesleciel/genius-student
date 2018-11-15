@@ -1,0 +1,30 @@
+
+example-radio-group {
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .example-radio-button {
+    margin: 5px;
+    width:45%;
+  }
+  
+  .example-selected-value {
+    margin: 15px 0;
+  }
+.mat-dialog-actions{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    top:20px;
+
+}
+.annuler{
+    margin-right:10px;
+}
+.annuler:hover{
+    background-color: rgb(247, 28, 28);
+}
+.valider:hover{
+    background-color: rgb(48, 190, 13);
+}

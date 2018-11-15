@@ -1,0 +1,280 @@
+@font-face{
+    font-family: ubuntu;
+    src: url(../../../assets/fonts/Ubuntu.ttf);
+}
+@font-face{
+    font-family:jo;
+    src: url(../../../assets/fonts/Aaargh.ttf);
+}
+*{
+    box-sizing:border-box;
+}
+.top{
+    padding-top:10px;
+}
+.slider{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:100vh;
+    animation: slide 30s infinite ease-in-out;
+}
+.content{
+    width:100%;
+    height: 100vh;
+    color:#fff;
+    background: -webkit-linear-gradient( bottom right,rgba(0,47,75,0.8),rgba(220,66,37,0.8));
+	
+}
+.content::after{
+    content: "";
+    width:710px;
+    display: block;
+    margin: 0 auto;
+    margin-top:100px;
+    font-family: jo;
+    font-size:3em;
+    font-weight: 500;
+    color: white;
+    animation: text 30s infinite ease-in-out;
+    text-align: center;
+}
+@keyframes text{
+    0%{
+        content: "\275d Profiter d'une expeérience exceptionelle \275e";
+    }
+    19%{
+        content: "\275d Profiter d'une expérience exceptionelle \275e";
+    }
+    21%{
+        content: "\275d Un espace favorable à votre apprentissage \275e";
+    }
+    39%{
+        content: "\275d Un espace favorable à votre apprentissage \275e";
+    }
+    41%{
+        content: "\275d Ne vous souciez plus de rien \275e";
+    }
+    59%{
+        content: "\275d Ne vous souciez plus de rien \275e";
+    }
+    61%{
+        content: "\275d Découvrez une nouvelle mannière d'apprendre \275e";
+    }
+    79%{
+        content: "\275d Découvrez une nouvelle mannière d'apprendre \275e";
+    }
+    81%{
+        content: "\275d Tout est prêt pour que vous proliferez \275e";
+    }
+    100%{
+        content: "\275d Tout est prêt pour que vous proliferez \275e";
+    }
+}
+
+
+@keyframes slide{
+    0%{
+        background-image: url('../../../assets/img/rawpixel.jpg');
+    }
+    19%{
+        background-image: url('../../../assets/img/rawpixel.jpg');
+    }
+    20%{
+        background-image: url('../../../assets/img/brand.jpg');
+    }
+    39%{
+        background-image: url('../../../assets/img/brand.jpg');
+    }
+    41%{
+        background-image: url('../../../assets/img/business.jpg');
+    }
+    59%{
+        background-image: url('../../../assets/img/business.jpg');
+    }
+    61%{
+        background-image: url('../../../assets/img/alphabet.jpg');
+    }
+    79%{
+        background-image: url('../../../assets/img/alphabet.jpg');
+    }
+    81%{
+        background-image: url('../../../assets/img/computer.jpg');
+    }
+    100%{
+        background-image: url('../../../assets/img/computer.jpg');
+    }
+}
+
+.gs{
+    font-family: ubuntu;
+    font-size: 2em;
+    padding-left: 40px;
+}
+
+
+#search-bar {
+    margin-right: 50px;
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    float: right;
+    padding: 0;
+    position: relative;
+  }
+  
+  #search-bar input[type="text"] {
+    height: 60px;
+    font-size:1.3em;
+    display: inline-block;
+    font-family: "Lato";
+    font-weight: 100;
+    border: none;
+    outline: none;
+    color:white;
+    padding: 3px;
+    padding-right: 60px;
+    width: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    z-index: 3;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+    font-family: ubuntu;
+  }
+  
+  #search-bar input[type="text"]:focus:hover {
+    border-bottom: 1px solid #BBB;
+  }
+  
+  #search-bar input[type="text"]:focus {
+    width: 700px;
+    z-index: 1;
+    border-bottom: 1px solid #BBB;
+    cursor: text;
+  }
+
+  #search-bar input[type="submit"] {
+    height: 67px;
+    width: 63px;
+    display: inline-block;
+    color:red;
+    float: right;
+    background: url(../../../assets/img/ico-search2.png) center center no-repeat;
+    background-size: 100%;
+    text-indent: -10000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: opacity .4s ease;
+  }
+  
+  #search-bar input[type="submit"]:hover {
+    opacity: 0.8;
+  }
+
+
+  .log {
+    display: block;
+    width:400px;
+    height: auto;
+    margin:0 auto;
+    padding: 15px;
+    flex-direction: column;
+    background-color: rgba(255,255,255,0.9);
+    margin-top: -370px;
+    border-radius: 5px;
+  }
+  .login{
+      width:100%;
+  }
+  
+  .pass, .mail{
+    width:99%
+  }
+  .pass{
+      margin-left: 0px;
+  }
+  
+  input.example-right-align::-webkit-outer-spin-button,
+  input.example-right-align::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  input.example-right-align {
+    -moz-appearance: textfield;
+  }
+  .mat-input-element{
+      left:20px;
+  }
+  .ico-login{
+      margin-right: 10px;
+      margin-bottom:-3px;
+  }
+  .inscription{
+      width: 120px;
+      float:right;
+      right:5px;
+      text-align: center;  
+  }
+  .forget{
+      float: left;
+      text-decoration: none;
+      color:#333;
+      line-height: 2.5em;
+      font-family: ubuntu;
+  }
+  .forget:hover{
+      opacity: .8;
+  }
+  .newSign{
+      font-family: ubuntu;
+      width: 400px;
+      margin-top: 60px;
+      font-size: .8em;
+      color: #555;
+  }
+  .signup{
+      display: inline-block;
+      width: 370px;
+      margin: auto;
+      margin-top: 10px;
+      letter-spacing: 1px;
+      font-size: 1.2em;
+      font-family: ubuntu;
+  }
+footer{
+    width:100%;
+    height: 50px;
+    margin-top:-50px;
+    padding-top: 5px;
+    font-family: ubuntu;
+    background-color: rgba(200,200,200,.5);
+    
+}
+footer > *{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+}
+footer>*>*{
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+footer a {
+    text-decoration: none;
+    color:#333;
+}
+footer a:hover{
+    color: white;
+}
+

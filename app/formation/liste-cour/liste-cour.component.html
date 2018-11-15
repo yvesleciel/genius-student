@@ -1,0 +1,30 @@
+<div  class="contenu">
+
+<mat-accordion class="liste">
+   
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                        (closed)="panelOpenState = false"  class="panel">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+         <p>  {{users.nom}} voici la Liste des Matières </p>
+        </mat-panel-title>
+        <mat-panel-description>
+            <p>
+          Cliquez pour {{panelOpenState ? 'fermer' : 'ouvrir'}}
+        </p>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+          <a  routerLink="/chap/cour/:id" routerLinkActive="active"
+          *ngFor = "let ma of mat">
+         <div class="matiere">
+             <h3>{{ma.name}}</h3>
+         </div>
+        </a>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+
+
+</div>
+  

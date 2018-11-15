@@ -1,0 +1,102 @@
+
+<!--<div id="conteneur">
+<div class="connexion">
+  <h3  class="connec">entrez votre adress-mail et votre mot de passe pour vous connecter</h3>
+  <form [formGroup]="signinForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      
+      <label for="email">Adresse mail :</label>
+    
+      <input type="text"
+             id="email"
+             class="form-control"
+             formControlName="email"  >
+          
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe :</label>
+      <input type="password"
+             id="password"
+             class="form-control"
+             formControlName="password">
+    </div>
+    <button class="bouton"
+            type="submit"
+            [disabled]="signinForm.invalid">connexion</button>
+  </form>
+  <p class="text-danger">{{ errorMessage }}</p>
+
+  <div class= "ins-link" >
+    <nav>
+    <a  routerLink="/inscription"  routerLinkActive= "active"  title="clique pour creer un compte">m'inscrire</a>
+    </nav>
+  </div>
+</div> -->
+<!--
+<div class="desc">
+  <h5>
+     Cher élève et étudiant voici une application spécialement concu pour vous aider 
+     à améliorer votre niveau scolaire et vous éviter les échec <br />vou aurez en fait
+     droit à :<ul>
+      <li>des explications de cour adaptés à votre niveau de compréhension</li>
+      <li>des réponses avec exercices d'appui à toutes les questions que vous pourriez poser</li>
+      <li>Une bibliothèque contenant les meilleurs documents</li>
+  </ul>
+  faites en bon usage
+  </h5>
+<p>Merci de nous soutenir en vous inscrivant</p>
+</div>
+</div>
+-->
+
+<div class="slider">
+  <div class="content">
+      <div class="principal">
+        <!-- Haut de page -->
+        <div class="top">
+            <span class="gs">Genius Student</span>
+            <div id="search-bar">
+                <form action="" autocomplete="on">
+                <input id="search" name="search" type="text" placeholder="Que voulez-vous rechercher ?">
+                <input id="search_submit" value="Rechercher" type="submit">
+                </form>
+              </div>
+        </div>
+
+       
+
+      </div>
+  </div>
+
+
+  <div class="log">
+    <form class="login">
+        <mat-form-field class="mail">
+            <img  matPrefix src="../../../assets/img/icons8_Secured_Letter_50px_1.png" alt="mail" width="20" height="20" class="ico-login">
+            <input matInput placeholder="Entrer votre email" [formControl]="email" required>
+        </mat-form-field>
+        <mat-form-field class="pass">
+          <img matPrefix src="../../../assets/img/icons8_Lock_52px.png" alt="show" width="20" height="20" class="ico-login">
+          <input matInput placeholder="Entrer votre mot de passe" [type]="hide ? 'password' : 'text'">
+          <img  matSuffix src="{{eye}}" width="20" height="20" (click)="onSee()">
+        </mat-form-field>
+        <a routerLink="/param" class="forget"> J'ai oublié mon mot de passe
+          <img  matPrefix src="../../../assets/img/icons8_Sad_50px.png" alt="forgot" width="20" height="20" class="ico-login">
+        </a>
+        <a mat-raised-button routerLink="/matiere" class="inscription">Se Connecter</a>
+        <p class="newSign"> Vous n'avez pas de compte ?<br> inscrivez vous maintenant , c'est gratuit !</p>
+      </form>
+      <button mat-flat-button color="primary" class="signup" (click)="popup()">Je m'inscris</button>
+</div>
+</div>
+<footer>
+<span class="legal"> <p> &copy;Genius Student 2018</p> <a routerLink="/singup/learn">CGU</a></span>
+<span class="Companie"> <h5>Companie</h5> <a routerLink="">Job</a> <a routerLink="">Contacts</a> </span>
+<span class="download">
+  <h5>Télécharger</h5>
+  <a href=""><img src="../../../assets/img/app-store.png" alt="télécharger sur appstore" width="120"></a>
+  <a href=""><img src="../../../assets/img/fr_googleplay.png" alt="télécharger sur playstore" width="120" ></a> 
+</span>
+</footer>
+
+
